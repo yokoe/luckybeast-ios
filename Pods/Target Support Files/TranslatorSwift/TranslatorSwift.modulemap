@@ -1,0 +1,6 @@
+framework module TranslatorSwift {
+  umbrella header "TranslatorSwift-umbrella.h"
+
+  export *
+  module * { export * }
+}

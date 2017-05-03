@@ -1,0 +1,615 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		190A35C31EAB5CE5009FF24F /* Detector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 190A35C21EAB5CE5009FF24F /* Detector.swift */; };
+		192498141E8E863500AC5B87 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 192498131E8E863500AC5B87 /* AppDelegate.swift */; };
+		192498161E8E863500AC5B87 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 192498151E8E863500AC5B87 /* ViewController.swift */; };
+		192498191E8E863500AC5B87 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 192498171E8E863500AC5B87 /* Main.storyboard */; };
+		1924981B1E8E863500AC5B87 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1924981A1E8E863500AC5B87 /* Assets.xcassets */; };
+		1924981E1E8E863500AC5B87 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1924981C1E8E863500AC5B87 /* LaunchScreen.storyboard */; };
+		192498291E8E863500AC5B87 /* luckybeastTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 192498281E8E863500AC5B87 /* luckybeastTests.swift */; };
+		192498341E8E96F500AC5B87 /* Speaker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 192498331E8E96F500AC5B87 /* Speaker.swift */; };
+		192498361E8E980200AC5B87 /* ServerAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 192498351E8E980200AC5B87 /* ServerAPI.swift */; };
+		192498381E8EA61000AC5B87 /* BossCoreView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 192498371E8EA61000AC5B87 /* BossCoreView.swift */; };
+		1924983A1E8EAA8D00AC5B87 /* EyeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 192498391E8EAA8D00AC5B87 /* EyeView.swift */; };
+		19A81B711E8FABA500A4B6D5 /* Listener.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19A81B701E8FABA500A4B6D5 /* Listener.swift */; };
+		19A95A621EA8FEE0001D07D7 /* Keys.plist in Resources */ = {isa = PBXBuildFile; fileRef = 19A95A611EA8FEE0001D07D7 /* Keys.plist */; };
+		19A95A641EA8FF1F001D07D7 /* Const.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19A95A631EA8FF1F001D07D7 /* Const.swift */; };
+		19C0EC791E9D1BEF00513101 /* LuckyBeast.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19C0EC781E9D1BEF00513101 /* LuckyBeast.swift */; };
+		19E18D101E8EAC5200A1F31D /* BackgroundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19E18D0F1E8EAC5200A1F31D /* BackgroundView.swift */; };
+		19E413681EB78B4600B487C6 /* FoundationExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19E413671EB78B4600B487C6 /* FoundationExt.swift */; };
+		19E6B33A1EB8EA13005C1D4B /* Capturer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19E6B3391EB8EA13005C1D4B /* Capturer.swift */; };
+		5F0661FA170E3A0F1EB99D78 /* Pods_luckybeast.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EE84354E66204ECBB95E1B39 /* Pods_luckybeast.framework */; };
+		C32B4B517C639384BF8E55ED /* Pods_luckybeastTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B3C58EFD212538E629C0D076 /* Pods_luckybeastTests.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		192498251E8E863500AC5B87 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 192498081E8E863500AC5B87 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1924980F1E8E863500AC5B87;
+			remoteInfo = luckybeast;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		190A35C21EAB5CE5009FF24F /* Detector.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Detector.swift; sourceTree = "<group>"; };
+		192498101E8E863500AC5B87 /* luckybeast.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = luckybeast.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		192498131E8E863500AC5B87 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		192498151E8E863500AC5B87 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		192498181E8E863500AC5B87 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		1924981A1E8E863500AC5B87 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		1924981D1E8E863500AC5B87 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		1924981F1E8E863500AC5B87 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		192498241E8E863500AC5B87 /* luckybeastTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = luckybeastTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		192498281E8E863500AC5B87 /* luckybeastTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = luckybeastTests.swift; sourceTree = "<group>"; };
+		1924982A1E8E863500AC5B87 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		192498331E8E96F500AC5B87 /* Speaker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Speaker.swift; sourceTree = "<group>"; };
+		192498351E8E980200AC5B87 /* ServerAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ServerAPI.swift; sourceTree = "<group>"; };
+		192498371E8EA61000AC5B87 /* BossCoreView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BossCoreView.swift; sourceTree = "<group>"; };
+		192498391E8EAA8D00AC5B87 /* EyeView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EyeView.swift; sourceTree = "<group>"; };
+		19A81B701E8FABA500A4B6D5 /* Listener.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Listener.swift; sourceTree = "<group>"; };
+		19A95A611EA8FEE0001D07D7 /* Keys.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Keys.plist; sourceTree = "<group>"; };
+		19A95A631EA8FF1F001D07D7 /* Const.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Const.swift; sourceTree = "<group>"; };
+		19C0EC781E9D1BEF00513101 /* LuckyBeast.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LuckyBeast.swift; sourceTree = "<group>"; };
+		19E18D0F1E8EAC5200A1F31D /* BackgroundView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BackgroundView.swift; sourceTree = "<group>"; };
+		19E413671EB78B4600B487C6 /* FoundationExt.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FoundationExt.swift; sourceTree = "<group>"; };
+		19E6B3391EB8EA13005C1D4B /* Capturer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Capturer.swift; sourceTree = "<group>"; };
+		34AF0765F19AA14989EE473C /* Pods-luckybeastTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-luckybeastTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-luckybeastTests/Pods-luckybeastTests.debug.xcconfig"; sourceTree = "<group>"; };
+		38A5470E5A5F07FC0F5F6D9A /* Pods-luckybeastTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-luckybeastTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-luckybeastTests/Pods-luckybeastTests.release.xcconfig"; sourceTree = "<group>"; };
+		4A342D45A68095B1108337E0 /* Pods-luckybeast.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-luckybeast.debug.xcconfig"; path = "Pods/Target Support Files/Pods-luckybeast/Pods-luckybeast.debug.xcconfig"; sourceTree = "<group>"; };
+		B3C58EFD212538E629C0D076 /* Pods_luckybeastTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_luckybeastTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EE84354E66204ECBB95E1B39 /* Pods_luckybeast.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_luckybeast.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F9AB4EFE4D2B985159CE61B9 /* Pods-luckybeast.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-luckybeast.release.xcconfig"; path = "Pods/Target Support Files/Pods-luckybeast/Pods-luckybeast.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1924980D1E8E863500AC5B87 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5F0661FA170E3A0F1EB99D78 /* Pods_luckybeast.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		192498211E8E863500AC5B87 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C32B4B517C639384BF8E55ED /* Pods_luckybeastTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		14EBCD8BDA3990E3594C74A3 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				4A342D45A68095B1108337E0 /* Pods-luckybeast.debug.xcconfig */,
+				F9AB4EFE4D2B985159CE61B9 /* Pods-luckybeast.release.xcconfig */,
+				34AF0765F19AA14989EE473C /* Pods-luckybeastTests.debug.xcconfig */,
+				38A5470E5A5F07FC0F5F6D9A /* Pods-luckybeastTests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		192498071E8E863500AC5B87 = {
+			isa = PBXGroup;
+			children = (
+				192498121E8E863500AC5B87 /* luckybeast */,
+				192498271E8E863500AC5B87 /* luckybeastTests */,
+				192498111E8E863500AC5B87 /* Products */,
+				14EBCD8BDA3990E3594C74A3 /* Pods */,
+				50DC1242BF4AF0E36A9C108D /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		192498111E8E863500AC5B87 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				192498101E8E863500AC5B87 /* luckybeast.app */,
+				192498241E8E863500AC5B87 /* luckybeastTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		192498121E8E863500AC5B87 /* luckybeast */ = {
+			isa = PBXGroup;
+			children = (
+				192498131E8E863500AC5B87 /* AppDelegate.swift */,
+				192498151E8E863500AC5B87 /* ViewController.swift */,
+				192498171E8E863500AC5B87 /* Main.storyboard */,
+				1924981A1E8E863500AC5B87 /* Assets.xcassets */,
+				1924981C1E8E863500AC5B87 /* LaunchScreen.storyboard */,
+				1924981F1E8E863500AC5B87 /* Info.plist */,
+				192498331E8E96F500AC5B87 /* Speaker.swift */,
+				192498351E8E980200AC5B87 /* ServerAPI.swift */,
+				192498371E8EA61000AC5B87 /* BossCoreView.swift */,
+				192498391E8EAA8D00AC5B87 /* EyeView.swift */,
+				19E18D0F1E8EAC5200A1F31D /* BackgroundView.swift */,
+				19A81B701E8FABA500A4B6D5 /* Listener.swift */,
+				19C0EC781E9D1BEF00513101 /* LuckyBeast.swift */,
+				19A95A611EA8FEE0001D07D7 /* Keys.plist */,
+				19A95A631EA8FF1F001D07D7 /* Const.swift */,
+				190A35C21EAB5CE5009FF24F /* Detector.swift */,
+				19E413671EB78B4600B487C6 /* FoundationExt.swift */,
+				19E6B3391EB8EA13005C1D4B /* Capturer.swift */,
+			);
+			path = luckybeast;
+			sourceTree = "<group>";
+		};
+		192498271E8E863500AC5B87 /* luckybeastTests */ = {
+			isa = PBXGroup;
+			children = (
+				192498281E8E863500AC5B87 /* luckybeastTests.swift */,
+				1924982A1E8E863500AC5B87 /* Info.plist */,
+			);
+			path = luckybeastTests;
+			sourceTree = "<group>";
+		};
+		50DC1242BF4AF0E36A9C108D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				EE84354E66204ECBB95E1B39 /* Pods_luckybeast.framework */,
+				B3C58EFD212538E629C0D076 /* Pods_luckybeastTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1924980F1E8E863500AC5B87 /* luckybeast */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1924982D1E8E863500AC5B87 /* Build configuration list for PBXNativeTarget "luckybeast" */;
+			buildPhases = (
+				479143E8C60339346ADC8B7D /* [CP] Check Pods Manifest.lock */,
+				1924980C1E8E863500AC5B87 /* Sources */,
+				1924980D1E8E863500AC5B87 /* Frameworks */,
+				1924980E1E8E863500AC5B87 /* Resources */,
+				87C45D0E4391F4668F2AFDB6 /* [CP] Embed Pods Frameworks */,
+				8BD68529C6764B686E18D9B5 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = luckybeast;
+			productName = luckybeast;
+			productReference = 192498101E8E863500AC5B87 /* luckybeast.app */;
+			productType = "com.apple.product-type.application";
+		};
+		192498231E8E863500AC5B87 /* luckybeastTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 192498301E8E863500AC5B87 /* Build configuration list for PBXNativeTarget "luckybeastTests" */;
+			buildPhases = (
+				059805D525ECD623919E56D0 /* [CP] Check Pods Manifest.lock */,
+				192498201E8E863500AC5B87 /* Sources */,
+				192498211E8E863500AC5B87 /* Frameworks */,
+				192498221E8E863500AC5B87 /* Resources */,
+				1CDF6BFB27CE4EBD216E859D /* [CP] Embed Pods Frameworks */,
+				EBABF708E57CB2976E172D62 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				192498261E8E863500AC5B87 /* PBXTargetDependency */,
+			);
+			name = luckybeastTests;
+			productName = luckybeastTests;
+			productReference = 192498241E8E863500AC5B87 /* luckybeastTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		192498081E8E863500AC5B87 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = Kreuz45;
+				TargetAttributes = {
+					1924980F1E8E863500AC5B87 = {
+						CreatedOnToolsVersion = 8.3;
+						ProvisioningStyle = Automatic;
+					};
+					192498231E8E863500AC5B87 = {
+						CreatedOnToolsVersion = 8.3;
+						DevelopmentTeam = 4D3WCELAM5;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 1924980F1E8E863500AC5B87;
+					};
+				};
+			};
+			buildConfigurationList = 1924980B1E8E863500AC5B87 /* Build configuration list for PBXProject "luckybeast" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 192498071E8E863500AC5B87;
+			productRefGroup = 192498111E8E863500AC5B87 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1924980F1E8E863500AC5B87 /* luckybeast */,
+				192498231E8E863500AC5B87 /* luckybeastTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1924980E1E8E863500AC5B87 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				19A95A621EA8FEE0001D07D7 /* Keys.plist in Resources */,
+				1924981E1E8E863500AC5B87 /* LaunchScreen.storyboard in Resources */,
+				1924981B1E8E863500AC5B87 /* Assets.xcassets in Resources */,
+				192498191E8E863500AC5B87 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		192498221E8E863500AC5B87 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		059805D525ECD623919E56D0 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		1CDF6BFB27CE4EBD216E859D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-luckybeastTests/Pods-luckybeastTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		479143E8C60339346ADC8B7D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		87C45D0E4391F4668F2AFDB6 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-luckybeast/Pods-luckybeast-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8BD68529C6764B686E18D9B5 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-luckybeast/Pods-luckybeast-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EBABF708E57CB2976E172D62 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-luckybeastTests/Pods-luckybeastTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1924980C1E8E863500AC5B87 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				192498341E8E96F500AC5B87 /* Speaker.swift in Sources */,
+				192498161E8E863500AC5B87 /* ViewController.swift in Sources */,
+				19E413681EB78B4600B487C6 /* FoundationExt.swift in Sources */,
+				192498141E8E863500AC5B87 /* AppDelegate.swift in Sources */,
+				19E18D101E8EAC5200A1F31D /* BackgroundView.swift in Sources */,
+				190A35C31EAB5CE5009FF24F /* Detector.swift in Sources */,
+				192498361E8E980200AC5B87 /* ServerAPI.swift in Sources */,
+				1924983A1E8EAA8D00AC5B87 /* EyeView.swift in Sources */,
+				192498381E8EA61000AC5B87 /* BossCoreView.swift in Sources */,
+				19C0EC791E9D1BEF00513101 /* LuckyBeast.swift in Sources */,
+				19A81B711E8FABA500A4B6D5 /* Listener.swift in Sources */,
+				19E6B33A1EB8EA13005C1D4B /* Capturer.swift in Sources */,
+				19A95A641EA8FF1F001D07D7 /* Const.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		192498201E8E863500AC5B87 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				192498291E8E863500AC5B87 /* luckybeastTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		192498261E8E863500AC5B87 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1924980F1E8E863500AC5B87 /* luckybeast */;
+			targetProxy = 192498251E8E863500AC5B87 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		192498171E8E863500AC5B87 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				192498181E8E863500AC5B87 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		1924981C1E8E863500AC5B87 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1924981D1E8E863500AC5B87 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		1924982B1E8E863500AC5B87 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		1924982C1E8E863500AC5B87 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		1924982E1E8E863500AC5B87 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4A342D45A68095B1108337E0 /* Pods-luckybeast.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = luckybeast/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.kreuz45.luckybeast;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		1924982F1E8E863500AC5B87 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F9AB4EFE4D2B985159CE61B9 /* Pods-luckybeast.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = luckybeast/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.kreuz45.luckybeast;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		192498311E8E863500AC5B87 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 34AF0765F19AA14989EE473C /* Pods-luckybeastTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = 4D3WCELAM5;
+				INFOPLIST_FILE = luckybeastTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.kreuz45.luckybeastTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/luckybeast.app/luckybeast";
+			};
+			name = Debug;
+		};
+		192498321E8E863500AC5B87 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 38A5470E5A5F07FC0F5F6D9A /* Pods-luckybeastTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = 4D3WCELAM5;
+				INFOPLIST_FILE = luckybeastTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.kreuz45.luckybeastTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/luckybeast.app/luckybeast";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1924980B1E8E863500AC5B87 /* Build configuration list for PBXProject "luckybeast" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1924982B1E8E863500AC5B87 /* Debug */,
+				1924982C1E8E863500AC5B87 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1924982D1E8E863500AC5B87 /* Build configuration list for PBXNativeTarget "luckybeast" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1924982E1E8E863500AC5B87 /* Debug */,
+				1924982F1E8E863500AC5B87 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		192498301E8E863500AC5B87 /* Build configuration list for PBXNativeTarget "luckybeastTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				192498311E8E863500AC5B87 /* Debug */,
+				192498321E8E863500AC5B87 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 192498081E8E863500AC5B87 /* Project object */;
+}

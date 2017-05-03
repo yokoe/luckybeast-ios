@@ -1,0 +1,6 @@
+framework module Pods_luckybeast {
+  umbrella header "Pods-luckybeast-umbrella.h"
+
+  export *
+  module * { export * }
+}
