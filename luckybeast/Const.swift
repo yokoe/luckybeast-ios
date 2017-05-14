@@ -21,10 +21,6 @@ class Const: NSObject {
         return stringValue(forKey: "GOOGLE_CLOUD_VISION_API_KEY")
     }
     
-    static var translatorSubscriptionKey: String {
-        return stringValue(forKey: "MICROSOFT_TRANSLATOR_SUBSCRIPTION_KEY")
-    }
-    
     static var luckyBeastServerAPIEndpoint: String {
         return stringValue(forKey: "LUCKYBEAST_SERVER_API_ENDPOINT")
     }

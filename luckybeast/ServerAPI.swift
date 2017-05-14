@@ -17,12 +17,16 @@ class ServerAPI: NSObject {
         endpointBase = endpoint
     }
     
-    func lookUp(_ word: String, completion: @escaping ((Result<WordSummary, NSError>) -> ())) {
-        Alamofire.request("\(endpointBase)/wikipedia/search", parameters: ["word": word]).responseJSON { response in
+    func lookUp(_ word: String, fromLanguage language: String?, completion: @escaping ((Result<WordSummary, NSError>) -> ())) {
+        var params = ["word": word]
+        if let language = language {
+            params["from"] = language
+        }
+        Alamofire.request("\(endpointBase)/wikipedia/search", parameters: params).responseJSON { response in
             switch response.result {
             case .success(let json):
-                if let dictionary = json as? [AnyHashable: Any], let summary = dictionary["summary"] as? String {
-                    completion(.success(WordSummary(word: word, summary: summary)))
+                if let dictionary = json as? [AnyHashable: Any], let summary = dictionary["summary"] as? String, let translatedWord = dictionary["word"] as? String {
+                    completion(.success(WordSummary(word: translatedWord, summary: summary)))
                 } else {
                     completion(.failure(ServerError.invalidWord as NSError))
                 }

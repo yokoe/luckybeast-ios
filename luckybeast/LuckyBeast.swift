@@ -1,5 +1,4 @@
 import UIKit
-import TranslatorSwift
 import Speech
 
 protocol LuckyBeastDelegate: class {
@@ -43,13 +42,11 @@ class LuckyBeast: NSObject {
     fileprivate let speaker = Speaker()
     fileprivate let api: ServerAPI
     private let listener = Listener()
-    fileprivate let translator: Translator
     fileprivate let detector: Detector
     fileprivate let capturer: Capturer
     
-    init(cloudVisionAPIKey: String, translatorSubscriptionKey: String, luckyBeastServerAPIEndpoint: String) {
+    init(cloudVisionAPIKey: String, luckyBeastServerAPIEndpoint: String) {
         detector = Detector(key: cloudVisionAPIKey)
-        translator = Translator(subscriptionKey: translatorSubscriptionKey)
         api = ServerAPI(endpoint: luckyBeastServerAPIEndpoint)
         capturer = Capturer()
     }
@@ -72,10 +69,10 @@ class LuckyBeast: NSObject {
         capturer.start()
     }
     
-    fileprivate func lookUp(_ word: String) {
+    fileprivate func lookUp(_ word: String, fromLanguage language: String? = nil) {
         mode = .thinking
         debugPrint("Looking: ", word)
-        api.lookUp(word) { result in
+        api.lookUp(word, fromLanguage: language) { result in
             switch result {
             case .success(let wordSummary):
                 switch self.askingTarget {
@@ -119,15 +116,7 @@ class LuckyBeast: NSObject {
                 }
                 
                 debugPrint("First object: ", firstAnnotation.text)
-                self.translator.translate(input: firstAnnotation.text, to: "ja", completion: { (result) in
-                    switch result {
-                    case .success(let word):
-                        self.lookUp(word)
-                    case .failure(let error):
-                        debugPrint(error)
-                        self.speaker.speak("翻訳に失敗したよ。正しいAPIキーが設定されているか確認してね。")
-                    }
-                })
+                self.lookUp(firstAnnotation.text, fromLanguage: "en")
             case .failure(let error):
                 debugPrint(error)
                 self.speaker.speak("物体認識に失敗したよ。正しいAPIキーが設定されているか確認してね。")

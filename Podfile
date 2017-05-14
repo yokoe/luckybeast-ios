@@ -7,7 +7,7 @@ target 'luckybeast' do
 
   # Pods for luckybeast
   pod "Alamofire"
-  pod "TranslatorSwift"
+  pod "Result"
 
   target 'luckybeastTests' do
     inherit! :search_paths

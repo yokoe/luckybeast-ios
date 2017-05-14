@@ -1,22 +1,15 @@
 PODS:
   - Alamofire (4.4.0)
   - Result (3.2.1)
-  - SWXMLHash (3.0.4)
-  - TranslatorSwift (0.0.1):
-    - Alamofire
-    - Result
-    - SWXMLHash
 
 DEPENDENCIES:
   - Alamofire
-  - TranslatorSwift
+  - Result
 
 SPEC CHECKSUMS:
   Alamofire: dc44b1600b800eb63da6a19039a0083d62a6a62d
   Result: 2453a22e5c5b11c0c3a478736e82cd02f763b781
-  SWXMLHash: 29d20b84692fc319ea8ed933058fe7d8d005139b
-  TranslatorSwift: 83e2b5068cfdc98ca3e2b91493bd74e22539f18d
 
-PODFILE CHECKSUM: e730c69b2d2c91e496e990fc5972b110a729d21b
+PODFILE CHECKSUM: 024cb0e8e58ee35dcbc0c074591228eb5705ba31
 
-COCOAPODS: 1.2.0.beta.1
+COCOAPODS: 1.2.1
