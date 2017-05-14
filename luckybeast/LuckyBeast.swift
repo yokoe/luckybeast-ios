@@ -28,8 +28,10 @@ class LuckyBeast: NSObject {
     
     fileprivate var mode: Mode = .idle {
         didSet {
-            delegate?.luckyBeast(self, didChangeMode: mode)
-            vibrator.isOn = mode == .panic
+            if oldValue != mode {
+                delegate?.luckyBeast(self, didChangeMode: mode)
+                vibrator.isOn = mode == .panic
+            }
         }
     }
     
@@ -190,4 +192,7 @@ func ==(a: LuckyBeast.Mode, b: LuckyBeast.Mode) -> Bool {
     default:
         return false
     }
+}
+func !=(a: LuckyBeast.Mode, b: LuckyBeast.Mode) -> Bool {
+    return !(a == b)
 }

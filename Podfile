@@ -8,6 +8,7 @@ target 'luckybeast' do
   # Pods for luckybeast
   pod "Alamofire"
   pod "Result"
+  pod "UIView+Shake"
 
   target 'luckybeastTests' do
     inherit! :search_paths

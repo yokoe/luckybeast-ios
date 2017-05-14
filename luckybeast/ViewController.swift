@@ -1,4 +1,5 @@
 import UIKit
+import UIView_Shake
 
 class ViewController: UIViewController {
     private let isSpeechRecognizerDebugEnabled = false
@@ -33,6 +34,7 @@ extension ViewController: LuckyBeastDelegate {
             status = .normal
         case .panic:
             status = .white
+            self.view.shake(200, withDelta: 4.0)
         case .listening(let isNameCalled):
             status = isNameCalled ? .shining : .normal
         }
