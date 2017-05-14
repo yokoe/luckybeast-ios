@@ -25,6 +25,7 @@
 		19E18D101E8EAC5200A1F31D /* BackgroundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19E18D0F1E8EAC5200A1F31D /* BackgroundView.swift */; };
 		19E413681EB78B4600B487C6 /* FoundationExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19E413671EB78B4600B487C6 /* FoundationExt.swift */; };
 		19E6B33A1EB8EA13005C1D4B /* Capturer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19E6B3391EB8EA13005C1D4B /* Capturer.swift */; };
+		19F8EFA51EC82EC800B03C05 /* Vibrator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19F8EFA41EC82EC800B03C05 /* Vibrator.swift */; };
 		5F0661FA170E3A0F1EB99D78 /* Pods_luckybeast.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EE84354E66204ECBB95E1B39 /* Pods_luckybeast.framework */; };
 		C32B4B517C639384BF8E55ED /* Pods_luckybeastTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B3C58EFD212538E629C0D076 /* Pods_luckybeastTests.framework */; };
 /* End PBXBuildFile section */
@@ -62,6 +63,7 @@
 		19E18D0F1E8EAC5200A1F31D /* BackgroundView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BackgroundView.swift; sourceTree = "<group>"; };
 		19E413671EB78B4600B487C6 /* FoundationExt.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FoundationExt.swift; sourceTree = "<group>"; };
 		19E6B3391EB8EA13005C1D4B /* Capturer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Capturer.swift; sourceTree = "<group>"; };
+		19F8EFA41EC82EC800B03C05 /* Vibrator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Vibrator.swift; sourceTree = "<group>"; };
 		34AF0765F19AA14989EE473C /* Pods-luckybeastTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-luckybeastTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-luckybeastTests/Pods-luckybeastTests.debug.xcconfig"; sourceTree = "<group>"; };
 		38A5470E5A5F07FC0F5F6D9A /* Pods-luckybeastTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-luckybeastTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-luckybeastTests/Pods-luckybeastTests.release.xcconfig"; sourceTree = "<group>"; };
 		4A342D45A68095B1108337E0 /* Pods-luckybeast.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-luckybeast.debug.xcconfig"; path = "Pods/Target Support Files/Pods-luckybeast/Pods-luckybeast.debug.xcconfig"; sourceTree = "<group>"; };
@@ -142,6 +144,7 @@
 				190A35C21EAB5CE5009FF24F /* Detector.swift */,
 				19E413671EB78B4600B487C6 /* FoundationExt.swift */,
 				19E6B3391EB8EA13005C1D4B /* Capturer.swift */,
+				19F8EFA41EC82EC800B03C05 /* Vibrator.swift */,
 			);
 			path = luckybeast;
 			sourceTree = "<group>";
@@ -378,6 +381,7 @@
 				1924983A1E8EAA8D00AC5B87 /* EyeView.swift in Sources */,
 				192498381E8EA61000AC5B87 /* BossCoreView.swift in Sources */,
 				19C0EC791E9D1BEF00513101 /* LuckyBeast.swift in Sources */,
+				19F8EFA51EC82EC800B03C05 /* Vibrator.swift in Sources */,
 				19A81B711E8FABA500A4B6D5 /* Listener.swift in Sources */,
 				19E6B33A1EB8EA13005C1D4B /* Capturer.swift in Sources */,
 				19A95A641EA8FF1F001D07D7 /* Const.swift in Sources */,

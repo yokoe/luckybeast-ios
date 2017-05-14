@@ -29,6 +29,7 @@ class LuckyBeast: NSObject {
     fileprivate var mode: Mode = .idle {
         didSet {
             delegate?.luckyBeast(self, didChangeMode: mode)
+            vibrator.isOn = mode == .panic
         }
     }
     
@@ -44,6 +45,7 @@ class LuckyBeast: NSObject {
     private let listener = Listener()
     fileprivate let detector: Detector
     fileprivate let capturer: Capturer
+    fileprivate let vibrator = Vibrator()
     
     init(cloudVisionAPIKey: String, luckyBeastServerAPIEndpoint: String) {
         detector = Detector(key: cloudVisionAPIKey)
