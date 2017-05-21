@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		190A35C31EAB5CE5009FF24F /* Detector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 190A35C21EAB5CE5009FF24F /* Detector.swift */; };
 		192498141E8E863500AC5B87 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 192498131E8E863500AC5B87 /* AppDelegate.swift */; };
 		192498161E8E863500AC5B87 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 192498151E8E863500AC5B87 /* ViewController.swift */; };
 		192498191E8E863500AC5B87 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 192498171E8E863500AC5B87 /* Main.storyboard */; };
@@ -41,7 +40,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		190A35C21EAB5CE5009FF24F /* Detector.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Detector.swift; sourceTree = "<group>"; };
 		192498101E8E863500AC5B87 /* luckybeast.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = luckybeast.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		192498131E8E863500AC5B87 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		192498151E8E863500AC5B87 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -141,7 +139,6 @@
 				19C0EC781E9D1BEF00513101 /* LuckyBeast.swift */,
 				19A95A611EA8FEE0001D07D7 /* Keys.plist */,
 				19A95A631EA8FF1F001D07D7 /* Const.swift */,
-				190A35C21EAB5CE5009FF24F /* Detector.swift */,
 				19E413671EB78B4600B487C6 /* FoundationExt.swift */,
 				19E6B3391EB8EA13005C1D4B /* Capturer.swift */,
 				19F8EFA41EC82EC800B03C05 /* Vibrator.swift */,
@@ -376,7 +373,6 @@
 				19E413681EB78B4600B487C6 /* FoundationExt.swift in Sources */,
 				192498141E8E863500AC5B87 /* AppDelegate.swift in Sources */,
 				19E18D101E8EAC5200A1F31D /* BackgroundView.swift in Sources */,
-				190A35C31EAB5CE5009FF24F /* Detector.swift in Sources */,
 				192498361E8E980200AC5B87 /* ServerAPI.swift in Sources */,
 				1924983A1E8EAA8D00AC5B87 /* EyeView.swift in Sources */,
 				192498381E8EA61000AC5B87 /* BossCoreView.swift in Sources */,

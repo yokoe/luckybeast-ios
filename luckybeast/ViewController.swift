@@ -3,7 +3,7 @@ import UIView_Shake
 
 class ViewController: UIViewController {
     private let isSpeechRecognizerDebugEnabled = false
-    fileprivate let boss = LuckyBeast(cloudVisionAPIKey: Const.cloudVisionAPIKey, luckyBeastServerAPIEndpoint: Const.luckyBeastServerAPIEndpoint)
+    fileprivate let boss = LuckyBeast(luckyBeastServerAPIEndpoint: Const.luckyBeastServerAPIEndpoint)
 
     @IBOutlet weak var label: UILabel!
     @IBOutlet weak var coreView: BossCoreView!

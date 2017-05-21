@@ -35,22 +35,13 @@ class LuckyBeast: NSObject {
         }
     }
     
-    enum AskingTarget {
-        case word
-        case image
-    }
-    
-    fileprivate var askingTarget: AskingTarget = .word
-    
     fileprivate let speaker = Speaker()
     fileprivate let api: ServerAPI
     private let listener = Listener()
-    fileprivate let detector: Detector
     fileprivate let capturer: Capturer
     fileprivate let vibrator = Vibrator()
     
-    init(cloudVisionAPIKey: String, luckyBeastServerAPIEndpoint: String) {
-        detector = Detector(key: cloudVisionAPIKey)
+    init(luckyBeastServerAPIEndpoint: String) {
         api = ServerAPI(endpoint: luckyBeastServerAPIEndpoint)
         capturer = Capturer()
     }
@@ -79,15 +70,8 @@ class LuckyBeast: NSObject {
         api.lookUp(word, fromLanguage: language) { result in
             switch result {
             case .success(let wordSummary):
-                switch self.askingTarget {
-                case .word:
-                    self.speaker.speak(wordSummary.summary) {_ in
-                        self.startMonitoring()
-                    }
-                case .image:
-                    self.speaker.speak("これは\(wordSummary.word)だね。\(wordSummary.summary)") {_ in
-                        self.startMonitoring()
-                    }
+                self.speaker.speak(wordSummary.summary) {_ in
+                    self.startMonitoring()
                 }
             case .failure(let error):
                 self.speaker.speak("あわわわ、あわわわ、あわわわ、あわわわ、わ、わ") {_ in
@@ -111,19 +95,18 @@ class LuckyBeast: NSObject {
     }
     
     fileprivate func describeObject(in image: UIImage) {
-        detector.detectObjects(in: image) { result in
+        api.image(image) { result in
             switch result {
-            case .success(let annotations):
-                guard let firstAnnotation = annotations.first else {
-                    debugPrint("No annotations.")
-                    return
+            case .success(let wordSummary):
+                self.speaker.speak("これは\(wordSummary.word)だね。\(wordSummary.summary)") {_ in
+                    self.startMonitoring()
                 }
-                
-                debugPrint("First object: ", firstAnnotation.text)
-                self.lookUp(firstAnnotation.text, fromLanguage: "en")
             case .failure(let error):
+                self.speaker.speak("あわわわ、あわわわ、あわわわ、あわわわ、わ、わ") {_ in
+                    self.startMonitoring()
+                }
                 debugPrint(error)
-                self.speaker.speak("物体認識に失敗したよ。正しいAPIキーが設定されているか確認してね。")
+                self.mode = .panic
             }
         }
     }
@@ -147,7 +130,6 @@ extension LuckyBeast: ListenerDelegate {
     
     func listener(_ listener: Listener, didDetectWordToLookUp word: String) {
         if !mode.isListening { return }
-        askingTarget = .word
         lookUp(word)
     }
     
@@ -159,7 +141,6 @@ extension LuckyBeast: ListenerDelegate {
         }
         
         mode = .thinking
-        askingTarget = .image
         capturer.capture()
     }
     
