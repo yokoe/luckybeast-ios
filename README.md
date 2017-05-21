@@ -9,7 +9,6 @@
 
 ## 動作環境/必要なもの
 * iOS 10以降
-* Google Cloud Vision APIのKey
 
 ## ビルド方法
 ### CoocaPods
@@ -19,11 +18,6 @@ CocoaPodsが必要です。
 ```
 pod install
 ```
-
-### キーの設定
-Google Cloud Vision APIの利用のため、キーの設定が必要です。
-
-`Keys.plist`の`GOOGLE_CLOUD_VISION_API_KEY`を設定してください。
 
 ## ライセンス
 MIT License
