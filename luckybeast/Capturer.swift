@@ -5,19 +5,23 @@ protocol CapturerDelegate: class {
     func capturer(_ capturer: Capturer, didCaptureImage image: UIImage)
 }
 
+enum CapturerError: Error {
+    case noFrontCamera
+}
+
 class Capturer: NSObject {
     fileprivate var captureSession: AVCaptureSession!
     fileprivate var stillImageOutput: AVCapturePhotoOutput?
     
     weak var delegate: CapturerDelegate?
     
-    func start() {
+    func start() throws {
         captureSession = AVCaptureSession()
         stillImageOutput = AVCapturePhotoOutput()
         
         captureSession.sessionPreset = AVCaptureSessionPreset640x480
         guard let device = AVCaptureDevice.defaultDevice(withDeviceType: .builtInWideAngleCamera, mediaType: AVMediaTypeVideo, position: .front) else {
-            fatalError("no front camera")
+            throw CapturerError.noFrontCamera
         }
         
         do {

@@ -61,7 +61,13 @@ class LuckyBeast: NSObject {
             }
         }
         
-        capturer.start()
+        do {
+            try capturer.start()
+        } catch CapturerError.noFrontCamera {
+            debugPrint("No front camera")
+        } catch _ {
+            fatalError("Unexpected error")
+        }
     }
     
     fileprivate func lookUp(_ word: String, fromLanguage language: String? = nil) {
