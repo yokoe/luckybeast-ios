@@ -104,6 +104,7 @@ class LuckyBeast: NSObject {
         api.image(image) { result in
             switch result {
             case .success(let wordSummary):
+                self.mode = .playing
                 self.speaker.speak("これは\(wordSummary.word)だね。\(wordSummary.summary)") {_ in
                     self.startMonitoring()
                 }
