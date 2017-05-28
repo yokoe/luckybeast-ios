@@ -59,7 +59,7 @@ class BossCoreView: UIView {
             let angle = CGFloat(i) / CGFloat(BossCoreView.indicatorDivisions) * 2 * CGFloat.pi - CGFloat.pi * 0.5
             let path = UIBezierPath()
             path.move(to: CGPoint(x: centerX + cos(angle) * indicatorRadius, y: centerY + sin(angle) * indicatorRadius))
-            path.addLine(to: CGPoint(x: centerX + cos(angle) * indicatorRadius * 0.5, y: centerY + sin(angle) * indicatorRadius * 0.5))
+            path.addLine(to: CGPoint(x: centerX + cos(angle) * indicatorRadius * 0.7, y: centerY + sin(angle) * indicatorRadius * 0.7))
             path.lineWidth = 10
             path.stroke()
         }
