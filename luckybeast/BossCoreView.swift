@@ -1,6 +1,7 @@
 import UIKit
 
 class BossCoreView: UIView {
+    private static let padding: CGFloat = 10
     private static let indicatorPadding: CGFloat = 10
     private static let indicatorDivisions = 20
     
@@ -40,13 +41,13 @@ class BossCoreView: UIView {
         case .panic:
             UIColor.white.setFill()
         }
-        UIBezierPath(ovalIn: bounds).fill()
+        UIBezierPath(ovalIn: bounds.insetBy(dx: BossCoreView.padding, dy: BossCoreView.padding)).fill()
     }
 
     private func drawIndicator() {
         let centerX = bounds.midX
         let centerY = bounds.midY
-        let indicatorRadius = min(centerX, centerY) - BossCoreView.indicatorPadding
+        let indicatorRadius = min(centerX, centerY) - BossCoreView.indicatorPadding - BossCoreView.padding
         
         let timeElapsed = -(timerStartedAt?.timeIntervalSinceNow ?? 0)
         let indicatorProgress = TimeInterval(Int(round(timeElapsed * 100)) % 100) * 0.01
