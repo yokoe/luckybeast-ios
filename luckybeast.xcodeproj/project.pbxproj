@@ -21,6 +21,8 @@
 		19A95A621EA8FEE0001D07D7 /* Keys.plist in Resources */ = {isa = PBXBuildFile; fileRef = 19A95A611EA8FEE0001D07D7 /* Keys.plist */; };
 		19A95A641EA8FF1F001D07D7 /* Const.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19A95A631EA8FF1F001D07D7 /* Const.swift */; };
 		19C0EC791E9D1BEF00513101 /* LuckyBeast.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19C0EC781E9D1BEF00513101 /* LuckyBeast.swift */; };
+		19D87C6A1F63ED6B00CF9FE8 /* AppSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19D87C691F63ED6B00CF9FE8 /* AppSettings.swift */; };
+		19D87C6C1F63EDCF00CF9FE8 /* DisplayMode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19D87C6B1F63EDCF00CF9FE8 /* DisplayMode.swift */; };
 		19E18D101E8EAC5200A1F31D /* BackgroundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19E18D0F1E8EAC5200A1F31D /* BackgroundView.swift */; };
 		19E413681EB78B4600B487C6 /* FoundationExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19E413671EB78B4600B487C6 /* FoundationExt.swift */; };
 		19E6B33A1EB8EA13005C1D4B /* Capturer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19E6B3391EB8EA13005C1D4B /* Capturer.swift */; };
@@ -58,6 +60,8 @@
 		19A95A611EA8FEE0001D07D7 /* Keys.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Keys.plist; sourceTree = "<group>"; };
 		19A95A631EA8FF1F001D07D7 /* Const.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Const.swift; sourceTree = "<group>"; };
 		19C0EC781E9D1BEF00513101 /* LuckyBeast.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LuckyBeast.swift; sourceTree = "<group>"; };
+		19D87C691F63ED6B00CF9FE8 /* AppSettings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppSettings.swift; sourceTree = "<group>"; };
+		19D87C6B1F63EDCF00CF9FE8 /* DisplayMode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DisplayMode.swift; sourceTree = "<group>"; };
 		19E18D0F1E8EAC5200A1F31D /* BackgroundView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BackgroundView.swift; sourceTree = "<group>"; };
 		19E413671EB78B4600B487C6 /* FoundationExt.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FoundationExt.swift; sourceTree = "<group>"; };
 		19E6B3391EB8EA13005C1D4B /* Capturer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Capturer.swift; sourceTree = "<group>"; };
@@ -142,6 +146,8 @@
 				19E413671EB78B4600B487C6 /* FoundationExt.swift */,
 				19E6B3391EB8EA13005C1D4B /* Capturer.swift */,
 				19F8EFA41EC82EC800B03C05 /* Vibrator.swift */,
+				19D87C691F63ED6B00CF9FE8 /* AppSettings.swift */,
+				19D87C6B1F63EDCF00CF9FE8 /* DisplayMode.swift */,
 			);
 			path = luckybeast;
 			sourceTree = "<group>";
@@ -383,9 +389,11 @@
 			files = (
 				192498341E8E96F500AC5B87 /* Speaker.swift in Sources */,
 				192498161E8E863500AC5B87 /* ViewController.swift in Sources */,
+				19D87C6A1F63ED6B00CF9FE8 /* AppSettings.swift in Sources */,
 				19E413681EB78B4600B487C6 /* FoundationExt.swift in Sources */,
 				192498141E8E863500AC5B87 /* AppDelegate.swift in Sources */,
 				19E18D101E8EAC5200A1F31D /* BackgroundView.swift in Sources */,
+				19D87C6C1F63EDCF00CF9FE8 /* DisplayMode.swift in Sources */,
 				192498361E8E980200AC5B87 /* ServerAPI.swift in Sources */,
 				1924983A1E8EAA8D00AC5B87 /* EyeView.swift in Sources */,
 				192498381E8EA61000AC5B87 /* BossCoreView.swift in Sources */,

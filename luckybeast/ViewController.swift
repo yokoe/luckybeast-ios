@@ -2,11 +2,6 @@ import UIKit
 import UIView_Shake
 
 class ViewController: UIViewController {
-    enum DisplayMode {
-        case phone
-        case costume
-    }
-    
     private let isSpeechRecognizerDebugEnabled = false
     fileprivate let boss = LuckyBeast(luckyBeastServerAPIEndpoint: Const.luckyBeastServerAPIEndpoint)
 
@@ -16,7 +11,17 @@ class ViewController: UIViewController {
     @IBOutlet weak var rightEye: EyeView!
     @IBOutlet weak var beltView: UIView!
     
-    private var displayMode: DisplayMode = .phone
+    private var displayMode: DisplayMode = .phone {
+        didSet {
+            updateViews()
+        }
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        
+        displayMode = AppSettings.shared.displayMode ?? .phone
+    }
     
     public override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
@@ -33,7 +38,12 @@ class ViewController: UIViewController {
     
     @IBAction func onDoubleTapScreen(_ sender: Any) {
         displayMode = displayMode == .phone ? .costume : .phone
+        AppSettings.shared.displayMode = displayMode
         
+        updateViews()
+    }
+    
+    private func updateViews() {
         guard let backgroundView: BackgroundView = view as? BackgroundView else {
             fatalError("view is not an instance of BackgroundView.")
         }
