@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina4_7" orientation="portrait">
+    <device id="retina5_5" orientation="landscape">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -19,17 +20,17 @@
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC" customClass="BackgroundView" customModule="luckybeast" customModuleProvider="target">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="736" height="414"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rcR-LS-4D1">
-                                <rect key="frame" x="16" y="276" width="343" height="21"/>
+                                <rect key="frame" x="20" y="150" width="696" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tN7-Aa-SuC" customClass="BossCoreView" customModule="luckybeast" customModuleProvider="target">
-                                <rect key="frame" x="107.5" y="467" width="160" height="160"/>
+                                <rect key="frame" x="288" y="214" width="160" height="160"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="160" id="BW0-Ea-Cnw"/>
@@ -37,7 +38,7 @@
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BN9-a4-pC3">
-                                <rect key="frame" x="0.0" y="317" width="375" height="32"/>
+                                <rect key="frame" x="0.0" y="191" width="736" height="32"/>
                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="32" id="n4e-cO-5R4"/>
@@ -52,12 +53,29 @@
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="x8P-wT-k77" customClass="EyeView" customModule="luckybeast" customModuleProvider="target">
-                                <rect key="frame" x="335" y="30" width="30" height="88"/>
+                                <rect key="frame" x="696" y="30" width="30" height="88"/>
                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="88" id="NvO-nI-hEC"/>
                                     <constraint firstAttribute="width" constant="30" id="qqd-qa-eY0"/>
                                 </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rNK-BQ-Mx2" customClass="BossCoreView" customModule="luckybeast" customModuleProvider="target">
+                                <rect key="frame" x="171" y="20" width="394" height="394"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="rNK-BQ-Mx2" secondAttribute="height" multiplier="1:1" id="i1E-8H-YLb"/>
+                                </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="i1E-8H-YLb"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=compact">
+                                    <mask key="constraints">
+                                        <include reference="i1E-8H-YLb"/>
+                                    </mask>
+                                </variation>
                             </view>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -74,15 +92,39 @@
                             <constraint firstItem="olR-Th-swQ" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="10" id="fjg-UP-2LR"/>
                             <constraint firstAttribute="trailing" secondItem="BN9-a4-pC3" secondAttribute="trailing" id="gWj-iQ-XAA"/>
                             <constraint firstItem="BN9-a4-pC3" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="kar-ou-0A8"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="rNK-BQ-Mx2" secondAttribute="bottom" id="nO4-0t-0DZ"/>
+                            <constraint firstItem="rNK-BQ-Mx2" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="rNs-GO-WmO"/>
+                            <constraint firstItem="rNK-BQ-Mx2" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ujj-Mn-7d4"/>
                             <constraint firstItem="rcR-LS-4D1" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="yLL-3r-ccC"/>
                         </constraints>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="rNK-BQ-Mx2"/>
+                            </mask>
+                            <mask key="constraints">
+                                <exclude reference="rNs-GO-WmO"/>
+                                <exclude reference="ujj-Mn-7d4"/>
+                                <exclude reference="nO4-0t-0DZ"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=compact">
+                            <mask key="subviews">
+                                <exclude reference="tN7-Aa-SuC"/>
+                                <include reference="rNK-BQ-Mx2"/>
+                            </mask>
+                            <mask key="constraints">
+                                <include reference="rNs-GO-WmO"/>
+                                <include reference="ujj-Mn-7d4"/>
+                                <include reference="nO4-0t-0DZ"/>
+                            </mask>
+                        </variation>
                         <connections>
                             <outletCollection property="gestureRecognizers" destination="9hl-M4-RQt" appends="YES" id="V4w-Cx-URX"/>
                         </connections>
                     </view>
                     <connections>
                         <outlet property="beltView" destination="BN9-a4-pC3" id="4C2-dU-0GU"/>
-                        <outlet property="coreView" destination="tN7-Aa-SuC" id="mG0-gn-hnM"/>
+                        <outlet property="coreView" destination="rNK-BQ-Mx2" id="UDh-KB-73i"/>
                         <outlet property="label" destination="rcR-LS-4D1" id="yza-fj-x2P"/>
                         <outlet property="leftEye" destination="olR-Th-swQ" id="9OT-Bo-hkK"/>
                         <outlet property="rightEye" destination="x8P-wT-k77" id="9Tp-N8-cNN"/>
@@ -95,7 +137,7 @@
                     </connections>
                 </tapGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="24.800000000000001" y="36.431784107946029"/>
+            <point key="canvasLocation" x="24.456521739130437" y="36.231884057971016"/>
         </scene>
     </scenes>
 </document>
